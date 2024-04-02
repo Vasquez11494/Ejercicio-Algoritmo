@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(adam-chang-IWenq-4JHqo-unsplash.jpg);
+            background-size: cover;
+        }
+
+        .contenido {
+            display: grid;
+            place-items: center;
+            margin-top: 15%;
+            text-align: center;
+        }
+        .formulario{
+            background-color: rgba(0, 0, 0, 0.679);
+            border: solid 1px white;
+            color: azure;
+            font-family: Verdana,
+        }
+        .buton{
+            background-color: rgba(255, 0, 13, 0.704);
+            color: white;
+            height: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+
+        <form action="matriz.php" method="post" class="formulario">
+            <h2>Programa para Elabrorar una matriz</h2>
+            <p>Instrucciones: A continuacion ingrese la cantidad de filas y columnas que desea</p>
+            <p>
+                <label for="filas">No. de Filas</label>
+            </p>
+            <p>
+                <input type="number" name="filas" min="1" required>
+            </p>
+            <p>
+                <label for="columnas">No. de Columnas</label>
+            </p>
+            <p>
+                <input type="number" name="columnas" min="1" required>
+            </p>
+            <p>
+                <button class="buton" type="submit">GENERAR MATRIZ</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
